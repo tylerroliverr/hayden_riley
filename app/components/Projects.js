@@ -12,7 +12,6 @@ export default function Projects() {
                 const data = await getProjectData();
                 if (data) {
                     setProjectData(data);
-                    console.log(data);
                 }
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -22,12 +21,10 @@ export default function Projects() {
         fetchData();
     }, []);
 
-    console.log(projectData);
-
     return (
         <>
             <p className="subHeading">Projects</p>
-            <div className="projectsWrapper">
+            <div className="itemsWrapper"  id="projects">
                 {projectData && projectData.length > 0 && projectData.map((project, index) => (
                     <div key={index}>
                         <p><span className="bold">{project.projectTitle}: </span>{project.projectTags}</p>

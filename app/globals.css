@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+/* UNIVERSAL STUFF */
 p,
 h1 {
     font-family: var(--basic-font);
@@ -24,11 +25,36 @@ a {
     background-color: black;
 }
 
+.padding {
+    padding: 0 20px;
+}
+
+/* ITEMS SECTION */
 .subHeading {
     font-size: 3rem;
     font-weight: 600;
 }
 
-.padding {
-    padding: 0 20px;
+.itemsWrapper {
+    display: none;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* FOOTER SECTION */
+.footerWrapper {
+    margin-top: auto;
+}
+
+.contactDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactDetails,
+.websiteWatermark {
+    padding: 5px 0;
 }

@@ -1,4 +1,4 @@
-import { client } from "../lib/sanity";
+import { client } from "@/app/lib/sanity";
 
 async function getData() {
     const query = `
