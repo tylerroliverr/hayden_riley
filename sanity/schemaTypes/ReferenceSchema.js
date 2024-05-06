@@ -1,6 +1,6 @@
 export default {
-    name: "reference",
-    title: "Reference",
+    name: "references",
+    title: "References",
     type: "document",
     fields: [
       {
