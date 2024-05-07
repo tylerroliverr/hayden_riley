@@ -1,6 +1,7 @@
-const x = window.matchMedia("(max-width: 699px)")
+const x = window.matchMedia("(max-width: 699px)");
 
-if (!x) {
+if (! x.matches) {
+    console.log(x);
     const cursorContainer = document.getElementById('cursor-container');
     const customCursor = document.getElementById('custom-cursor');
     const link = document.querySelectorAll('.link');
