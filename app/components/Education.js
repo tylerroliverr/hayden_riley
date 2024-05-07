@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import getEducationData from "./data/getEducationData";
-
+import { toggleAccordion } from "@/public/eventListeners";
 
 export default function Education() {
     const [educationData, setEducationData] = useState([]);
@@ -23,7 +23,7 @@ export default function Education() {
 
     return (
         <>
-        <div className="accordion link" id="educationAccordion">
+        <div className="accordion link" id="educationAccordion" onClick={() => toggleAccordion('educationAccordion')}>
             <p className="subHeading">Education</p>
             <p className="openTag">[open]</p>
             <p className="closeTag">[close]</p>

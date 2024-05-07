@@ -1,6 +1,7 @@
 "use client";
 import getSkillsData from "./data/getSkillsData";
 import { useEffect, useState } from "react";
+import { toggleAccordion } from "@/public/eventListeners";
 
 export default function Skills() {
 
@@ -23,7 +24,7 @@ export default function Skills() {
     
     return (
         <>
-        <div className="accordion link" id="skillsAccordion">
+        <div className="accordion link" id="skillsAccordion" onClick={() => toggleAccordion('skillsAccordion')}>
             <p className="subHeading">Skills</p>
             <p className="openTag">[open]</p>
             <p className="closeTag">[close]</p>

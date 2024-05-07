@@ -1,6 +1,7 @@
 "use client";
 import getReferencesData from "./data/getReferencesData";
 import { useEffect, useState } from 'react';
+import { toggleAccordion } from "@/public/eventListeners";
 
 export default function References() {
 
@@ -23,7 +24,7 @@ export default function References() {
 
     return (
         <>
-        <div className="accordion link" id="referencesAccordion">
+        <div className="accordion link" id="referencesAccordion" onClick={() => toggleAccordion('referencesAccordion')}>
             <p className="subHeading">References</p>
             <p className="openTag">[open]</p>
             <p className="closeTag">[close]</p>

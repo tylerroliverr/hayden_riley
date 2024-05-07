@@ -12,6 +12,12 @@ body {
     background-color: white;
 }
 
+*::-webkit-scrollbar {
+    display: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
 /* CUSTOM CURSOR */
 #cursor-container {
     position: fixed;
@@ -157,7 +163,7 @@ a {
 /* FOOTER SECTION */
 .footerWrapper {
     position: fixed;
-    width: 97.8dvw;
+    width: 98.4dvw;
     bottom: 0px;
     background-color: white;
     opacity: 0.9;

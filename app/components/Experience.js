@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import getExperienceData from './data/getExperienceData';
+import { toggleAccordion } from "@/public/eventListeners";
 
 export default function Experience() {
 
@@ -23,7 +24,7 @@ export default function Experience() {
 
     return (
         <>
-        <div className="accordion link" id="experienceAccordion">
+        <div className="accordion link" id="experienceAccordion" onClick={() => toggleAccordion('experienceAccordion')}>
             <p className="subHeading">Experience</p>
             <p className="openTag">[open]</p>
             <p className="closeTag">[close]</p>
