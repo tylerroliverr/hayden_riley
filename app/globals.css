@@ -222,6 +222,7 @@ a {
     .openTag,
     .closeTag {
         margin: 0;
+        font-size: 0.8rem;
     }
 
     .hoveringCont {
@@ -242,7 +243,8 @@ a {
     }
 
     .footerWrapper {
-        width: 90dvw
+        width: 90dvw;
+        font-size: 0.8rem;
     }
 
     .marginItemLine {
