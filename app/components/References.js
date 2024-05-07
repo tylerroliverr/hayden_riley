@@ -34,6 +34,7 @@ export default function References() {
                         <p><span className="bold">{references.referenceName}</span></p>
                         <p>{references.roleOfReference}</p>
                         <p>{references.contactDetails}</p>
+                        <div className="itemLine marginItemLine"></div>
                     </div>
                 ))}
             </div>

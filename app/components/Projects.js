@@ -26,15 +26,17 @@ export default function Projects() {
         <div className="line"></div>
         <div className="accordion" id="projectsAccordion">
             <p className="subHeading">Projects</p>
+            <p className="openTag">[open]</p>
+            <p className="closeTag">[close]</p>
         </div>
             <div className="itemsWrapper"  id="projects">
                 {projectData && projectData.length > 0 && projectData.map((project, index) => (
                     <div key={index}>
                         <p><span className="bold">{project.projectTitle}: </span>{project.projectTags}</p>
-                        <p>Company: {project.company}</p>
-                        <p>Director of Photography: {project.directorOfPhotography}</p>
-                        <p>Format: {project.format}</p>
-                        <div className="line"></div>
+                        <p><span className="bold">Director of Photography: </span>{project.directorOfPhotography}</p>
+                        <p><span className="bold">Company: </span>{project.company}</p>
+                        <p><span className="bold">Format: </span>{project.format}</p>
+                        <div className="itemLine marginItemLine"></div>
                     </div>
                 ))}
             </div>

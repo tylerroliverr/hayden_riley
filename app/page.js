@@ -7,21 +7,24 @@ import Experience from "./components/Experience";
 import References from "./components/References";
 import Skills from "./components/Skills";
 import ItemsWrapper from "./components/itemsWrapper";
+import SmoothScrolling from "./components/SmoothScrolling";
 
 export default function Home() {
   return (
     <main>
-      <Padding>
-        <Header />
-        <ItemsWrapper>
-          <Projects />
-          <Education />
-          <Experience />
-          <References />
-          <Skills />
-        </ItemsWrapper>
-        <Footer />
-      </Padding>
+      <SmoothScrolling>
+        <Padding>
+          <Header />
+          <ItemsWrapper>
+            <Projects />
+            <Education />
+            <Experience />
+            <References />
+            <Skills />
+          </ItemsWrapper>
+          <Footer />
+        </Padding>
+      </SmoothScrolling>
     </main>
   );
 }
