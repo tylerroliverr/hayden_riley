@@ -29,13 +29,14 @@ export default function Education() {
             <p className="closeTag">[close]</p>
         </div>
             <div className="itemsWrapper" id="education">
+            <div className="itemLine marginItemFirstLine"></div>
                 {educationData && educationData.length > 0 && educationData.map((education, index) => (
                     <div key={index}>
                         <p><span className="bold">{education.schoolName}</span></p>
                         <p>{education.dates}</p>
                         <p>{education.areaStudied}</p>
                         <p>{education.description}</p>
-                        <div className="itemLine marginItemLine"></div>
+                        <div className={"itemLine marginItemLine" + (index === educationData.length - 1 ? " lastItemLine" : "")}></div>
                     </div>
                 ))}
             </div>

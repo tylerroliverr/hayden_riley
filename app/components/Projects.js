@@ -31,13 +31,14 @@ export default function Projects() {
             <p className="closeTag">[close]</p>
         </div>
             <div className="itemsWrapper"  id="projects">
+            <div className="itemLine marginItemFirstLine"></div>
                 {projectData && projectData.length > 0 && projectData.map((project, index) => (
                     <div key={index}>
                         <p><span className="bold">{project.projectTitle}: </span>{project.projectTags}</p>
                         <p><span className="bold">Director of Photography: </span>{project.directorOfPhotography}</p>
                         <p><span className="bold">Company: </span>{project.company}</p>
                         <p><span className="bold">Format: </span>{project.format}</p>
-                        <div className="itemLine marginItemLine"></div>
+                        <div className={"itemLine marginItemLine" + (index === projectData.length - 1 ? " lastItemLine" : "")}></div>
                     </div>
                 ))}
             </div>

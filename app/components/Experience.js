@@ -30,12 +30,13 @@ export default function Experience() {
             <p className="closeTag">[close]</p>
         </div>
             <div className='itemsWrapper' id='experience'>
+            <div className="itemLine marginItemFirstLine"></div>
                 {experienceData && experienceData.length > 0 && experienceData.map((experience, index) => (
                     <div key={index}>
                         <p><span className="bold">{experience.experienceTitle}</span></p>
                         <p>{experience.dates}</p>
                         <p>{experience.description}</p>
-                        <div className="itemLine marginItemLine"></div>
+                        <div className={"itemLine marginItemLine" + (index === experienceData.length - 1 ? " lastItemLine" : "")}></div>
                     </div>
                 ))}
             </div>

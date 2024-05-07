@@ -30,12 +30,13 @@ export default function References() {
             <p className="closeTag">[close]</p>
         </div>
             <div className="itemsWrapper" id="references">
+            <div className="itemLine marginItemFirstLine"></div>
                 {referencesData && referencesData.length > 0 && referencesData.map((references, index) => (
                     <div key={index}>
                         <p><span className="bold">{references.referenceName}</span></p>
                         <p>{references.roleOfReference}</p>
                         <p>{references.contactDetails}</p>
-                        <div className="itemLine marginItemLine"></div>
+                        <div className={"itemLine marginItemLine" + (index === referencesData.length - 1 ? " lastItemLine" : "")}></div>
                     </div>
                 ))}
             </div>
