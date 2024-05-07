@@ -23,7 +23,9 @@ export default function Experience() {
 
     return (
         <>
-            <p className='subHeading'>Experience</p>
+        <div className="accordion" id="experienceAccordion">
+            <p className="subHeading">Experience</p>
+        </div>
             <div className='itemsWrapper' id='experience'>
                 {experienceData && experienceData.length > 0 && experienceData.map((experience, index) => (
                     <div key={index}>
@@ -33,6 +35,7 @@ export default function Experience() {
                     </div>
                 ))}
             </div>
+            <div className="line marginForLine"></div>
         </>
     )
 }

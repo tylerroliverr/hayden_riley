@@ -6,18 +6,21 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import References from "./components/References";
 import Skills from "./components/Skills";
+import ItemsWrapper from "./components/itemsWrapper";
 
 export default function Home() {
   return (
     <main>
       <Padding>
-        <Header/>
-          <Projects/>
-          <Education/>
-          <Experience/>
-          <References/>
-          <Skills/>
-        <Footer/>
+        <Header />
+        <ItemsWrapper>
+          <Projects />
+          <Education />
+          <Experience />
+          <References />
+          <Skills />
+        </ItemsWrapper>
+        <Footer />
       </Padding>
     </main>
   );

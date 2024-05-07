@@ -23,7 +23,9 @@ export default function Skills() {
     
     return (
         <>
+        <div className="accordion" id="skillsAccordion">
             <p className="subHeading">Skills</p>
+        </div>
             <div className="itemsWrapper" id="skills">
                 {skillsData && skillsData.length > 0 && skillsData.map((skill, index) => (
                     <div key={index}>
@@ -31,7 +33,8 @@ export default function Skills() {
                         <p>{skill.description}</p>
                     </div>
                 ))}
-            </div>  
+            </div>
+            <div className="line marginForLine"></div>
         </>
     )
 }

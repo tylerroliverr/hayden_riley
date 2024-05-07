@@ -23,7 +23,11 @@ export default function References() {
 
     return (
         <>
+        <div className="accordion" id="referencesAccordion">
             <p className="subHeading">References</p>
+            <p className="openTag">[open]</p>
+            <p className="closeTag">[close]</p>
+        </div>
             <div className="itemsWrapper" id="references">
                 {referencesData && referencesData.length > 0 && referencesData.map((references, index) => (
                     <div key={index}>
@@ -33,6 +37,7 @@ export default function References() {
                     </div>
                 ))}
             </div>
+            <div className="line marginForLine"></div>
         </>
     )
 }

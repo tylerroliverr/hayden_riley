@@ -23,7 +23,9 @@ export default function Education() {
 
     return (
         <>
+        <div className="accordion" id="educationAccordion">
             <p className="subHeading">Education</p>
+        </div>
             <div className="itemsWrapper" id="education">
                 {educationData && educationData.length > 0 && educationData.map((education, index) => (
                     <div key={index}>
@@ -35,6 +37,7 @@ export default function Education() {
                     </div>
                 ))}
             </div>
+            <div className="line marginForLine"></div>
         </>
     )
 }

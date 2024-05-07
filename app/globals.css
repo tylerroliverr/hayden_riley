@@ -25,13 +25,38 @@ a {
     background-color: black;
 }
 
+.marginForLine {
+    margin-top: 4px;
+}
+
 .padding {
     padding: 0 20px;
 }
 
+.subheadingsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* HEADER SECTION */
+.headerWrapper h1 {
+    font-size: 4dvw;
+    font-weight: 500;
+    line-height: 1;
+    display: flex;
+}
+
+.headerWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5dvh;
+}
+
 /* ITEMS SECTION */
 .subHeading {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 
@@ -43,9 +68,27 @@ a {
     font-weight: 600;
 }
 
+/* ACCORDION SECTION */
+.accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.openTag,
+.closeTag {
+    margin-top: 3px;
+}
+
+.closeTag {
+    display: none;
+}
+
 /* FOOTER SECTION */
 .footerWrapper {
-    margin-top: auto;
+    position: fixed;
+    width: 98.3dvw;
+    bottom: 10px;
 }
 
 .contactDetails {

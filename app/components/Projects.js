@@ -23,7 +23,10 @@ export default function Projects() {
 
     return (
         <>
+        <div className="line"></div>
+        <div className="accordion" id="projectsAccordion">
             <p className="subHeading">Projects</p>
+        </div>
             <div className="itemsWrapper"  id="projects">
                 {projectData && projectData.length > 0 && projectData.map((project, index) => (
                     <div key={index}>
@@ -35,6 +38,7 @@ export default function Projects() {
                     </div>
                 ))}
             </div>
+        <div className="line marginForLine"></div>
         </>
     )
 }
