@@ -23,7 +23,7 @@ export default function Skills() {
     
     return (
         <>
-        <div className="accordion" id="skillsAccordion">
+        <div className="accordion link" id="skillsAccordion">
             <p className="subHeading">Skills</p>
             <p className="openTag">[open]</p>
             <p className="closeTag">[close]</p>

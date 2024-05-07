@@ -1,4 +1,6 @@
+import Cursor from "./components/cursor";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   title: "Create Next App",
@@ -9,8 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Cursor/>
         {children}
       </body>
+      <Script defer src="/cursorScript.js"/>
     </html>
   );
 }

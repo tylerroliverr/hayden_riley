@@ -24,7 +24,7 @@ export default function Projects() {
     return (
         <>
         <div className="line"></div>
-        <div className="accordion" id="projectsAccordion">
+        <div className="accordion link" id="projectsAccordion">
             <p className="subHeading">Projects</p>
             <p className="openTag">[open]</p>
             <p className="closeTag">[close]</p>

@@ -23,7 +23,7 @@ export default function Education() {
 
     return (
         <>
-        <div className="accordion" id="educationAccordion">
+        <div className="accordion link" id="educationAccordion">
             <p className="subHeading">Education</p>
             <p className="openTag">[open]</p>
             <p className="closeTag">[close]</p>

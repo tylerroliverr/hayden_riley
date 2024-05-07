@@ -23,7 +23,7 @@ export default function References() {
 
     return (
         <>
-        <div className="accordion" id="referencesAccordion">
+        <div className="accordion link" id="referencesAccordion">
             <p className="subHeading">References</p>
             <p className="openTag">[open]</p>
             <p className="closeTag">[close]</p>

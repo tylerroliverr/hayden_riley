@@ -23,7 +23,7 @@ export default function Experience() {
 
     return (
         <>
-        <div className="accordion" id="experienceAccordion">
+        <div className="accordion link" id="experienceAccordion">
             <p className="subHeading">Experience</p>
             <p className="openTag">[open]</p>
             <p className="closeTag">[close]</p>
