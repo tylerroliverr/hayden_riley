@@ -33,3 +33,4 @@ export function toggleAccordion(accordionId) {
         accordion.querySelector('.subHeading').classList.add('italic'); // Add italic class to subHeading
     }
 }
+

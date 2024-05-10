@@ -6,11 +6,11 @@ export default function Footer() {
             <div className="footerWrapper">
                 <div className="contactDetails">
                     <p>0498 444 233</p>
-                    <p>hayden.j.riley@gmail.com</p>
+                    <p className="email link">hayden.j.riley@gmail.com</p>
                 </div>
                 <div className="line"></div>
                 <div className="websiteWatermark">
-                    <Link href="https://blueroomstudios.com.au">
+                    <Link target="_blank" href="https://blueroomstudios.com.au">
                         <p>site by blueroom studios</p>
                     </Link>
                 </div>
